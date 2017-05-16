@@ -63,6 +63,13 @@ client:on('messageCreate', function(message)
 			footer = {text = message.author.name}
 		} end
 	end
+		
+		if cmd == (string.format(prefix .. 'donate')) then
+		message.channel:sendMessage('Please donate to our host here: https://www.patreon.com/shellshock')
+
+		
+		
+	end
 
 	if cmd == (string.format(prefix .. 'google')) then
 		message.channel:sendMessage('Searching!')
